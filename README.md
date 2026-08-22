@@ -48,6 +48,9 @@ ssh username@dia_chi_ip_server
 
 <img width="699" height="483" alt="image" src="https://github.com/user-attachments/assets/3ba4fa4d-03ab-4c9a-a6ef-2f9bd40b09c2" />
 
+Lưu trữ lại key đăng nhập
+
+<img width="935" height="353" alt="image" src="https://github.com/user-attachments/assets/b2cd2fe5-9e1b-42c7-ad8e-c1cda56baaf0" />
 
 
 

@@ -1,4 +1,33 @@
-#Chi tiết cấu hình SSH trên Ubuntu Server
+# Cấu hình IP tĩnh trên Ubuntu Server
+
+cd /etc/netplan
+
+ls -l
+
+sau khi dùng lệnh ls -l chúng ta sẽ thấy 1 tập tin có định dạng .yaml
+
+sudo nano file_name.yaml
+
+sau đó nhập mật khẩu đăng nhập
+
+
+<img width="853" height="309" alt="image" src="https://github.com/user-attachments/assets/5537ef14-aadf-4ac8-8a85-da83f56a804e" />
+
+
+Chỉnh sửa các thông số mạng như: địa chỉ IP, địa chỉ DNS server, địa chỉ IP Default Gateway. Sau khi chỉnh sửa xong hãy dùng phím tắt Ctrl + X -> Enter -> Ctrl + O để thoát khỏi trình chỉnh sửa nano.
+
+<img width="861" height="497" alt="image" src="https://github.com/user-attachments/assets/2602bed3-8524-4ea8-97ed-e0b661c8c42d" />
+
+sudo netplan apply
+
+<img width="807" height="227" alt="image" src="https://github.com/user-attachments/assets/a5041f73-bc57-481b-8d5a-f25b15907336" />
+
+ping google.com để kiểm tra trạng thái kết nối.
+
+<img width="919" height="153" alt="image" src="https://github.com/user-attachments/assets/fd0f30f6-5dbf-4270-964e-72fce0516cc5" />
+
+
+# Chi tiết cấu hình SSH trên Ubuntu Server
 
 #bước 1 : update hệ thống
 

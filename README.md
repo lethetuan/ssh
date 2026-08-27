@@ -1,14 +1,16 @@
 # Cấu hình IP tĩnh trên Ubuntu Server
 
+#Bước 1: di chuyển đến thư mục chứa cấu hình mạng và kiểm tra tên tập tin chứa cấu hình.
+
 cd /etc/netplan
 
 ls -l
 
-sau khi dùng lệnh ls -l chúng ta sẽ thấy 1 tập tin có định dạng .yaml
-
+#Bước 2: sau khi dùng lệnh ls -l chúng ta sẽ thấy 1 tập tin có định dạng .yaml --> Tập tin này sẽ chứa các thông tin cấu hình mạng
+Dùng lệnh chỉnh sửa tập tin này:
 sudo nano file_name.yaml
 
-sau đó nhập mật khẩu đăng nhập
+sau đó nhập mật khẩu đăng nhập để xác thực và tiến hành chỉnh sửa.
 
 
 <img width="853" height="309" alt="image" src="https://github.com/user-attachments/assets/5537ef14-aadf-4ac8-8a85-da83f56a804e" />
@@ -17,6 +19,8 @@ sau đó nhập mật khẩu đăng nhập
 Chỉnh sửa các thông số mạng như: địa chỉ IP, địa chỉ DNS server, địa chỉ IP Default Gateway. Sau khi chỉnh sửa xong hãy dùng phím tắt Ctrl + X -> Enter -> Ctrl + O để thoát khỏi trình chỉnh sửa nano.
 
 <img width="861" height="497" alt="image" src="https://github.com/user-attachments/assets/2602bed3-8524-4ea8-97ed-e0b661c8c42d" />
+
+#Bước 3: Dùng lệnh lưu và áp dụng các thay đổi các thông số đã chỉnh sửa:
 
 sudo netplan apply
 

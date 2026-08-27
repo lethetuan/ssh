@@ -8,6 +8,7 @@ ls -l
 
 #Bước 2: sau khi dùng lệnh ls -l chúng ta sẽ thấy 1 tập tin có định dạng .yaml --> Tập tin này sẽ chứa các thông tin cấu hình mạng
 Dùng lệnh chỉnh sửa tập tin này:
+
 sudo nano file_name.yaml
 
 sau đó nhập mật khẩu đăng nhập để xác thực và tiến hành chỉnh sửa.

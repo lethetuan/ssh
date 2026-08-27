@@ -31,9 +31,18 @@ sudo ufw enable
 
 #Tạo và sao chép SSH Key. Thực hiện trên Powershell của máy tính admin
 
+# lệnh tạo ssh key ngay trên máy tính Window của Admin
+
 ssh-keygen -t ed25519 -C "ten_may_tinh_cua_ban"
 
-cat id_ed25519.pub | ssh tuan@10.1.1.30 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+# sao chép public key ssh lên server linux
+
+cd C:\Users\username\.ssh   (thay thế username bằng username máy tính của bạn)
+
+
+type id_ed25519.pub | ssh tuan@10.1.1.30 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+
+
 
 <img width="801" height="621" alt="image" src="https://github.com/user-attachments/assets/9bf99a63-7ce6-4190-bf15-152fc3ec9001" />
 

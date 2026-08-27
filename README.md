@@ -29,20 +29,26 @@ sudo ufw enable
 
 <img width="597" height="97" alt="image" src="https://github.com/user-attachments/assets/989e0911-bcc9-478f-a80c-56949a6a5694" />
 
-#Tạo và sao chép SSH Key. Thực hiện trên Powershell của máy tính admin
+#Tạo và sao chép SSH Key. Thực hiện trên Powershell hoặc cmd trên máy tính admin
 
 # lệnh tạo ssh key ngay trên máy tính Window của Admin
 
-ssh-keygen -t ed25519 -C "ten_may_tinh_cua_ban"
+ssh-keygen -t ed25519 -C "ten_may_tinh_cua_ban"     (-C "ten_may_tinh_cua_ban" để note lại tên máy tính thôi)
 
 # sao chép public key ssh lên server linux
 
-cd C:\Users\username\.ssh   (thay thế username bằng username máy tính của bạn)
+cd C:\Users\username\.ssh       (thay thế username bằng username máy tính của bạn)
 
 
 type id_ed25519.pub | ssh tuan@10.1.1.30 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
 
 
+Nếu dùng Command Promt (cmd) sẽ dùng lệnh như hình dưới.
+
+<img width="1283" height="191" alt="image" src="https://github.com/user-attachments/assets/1afa38a1-0718-42ba-9a74-2386943e5d7c" />
+
+
+Nếu dùng Powershell sẽ dùng lệnh như hình dưới.
 
 <img width="801" height="621" alt="image" src="https://github.com/user-attachments/assets/9bf99a63-7ce6-4190-bf15-152fc3ec9001" />
 

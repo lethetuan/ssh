@@ -1,6 +1,6 @@
-# Hướng dẫn Cấu hình IP tĩnh và SSH trên Ubuntu Server
+# Hướng dẫn cài đặt và cấu hình Nginx Proxy Manager trên Ubuntu Server
 
-Tài liệu này hướng dẫn chi tiết các bước để thiết lập địa chỉ IP tĩnh và cấu hình bảo mật SSH (đăng nhập bằng SSH Key) trên Ubuntu Server.
+Tài liệu này hướng dẫn chi tiết các bước để thiết lập địa chỉ IP tĩnh, cấu hình bảo mật SSH (đăng nhập bằng SSH Key) để chạy Nginx Proxy Manager trên Ubuntu Server.
 
 ---
 
